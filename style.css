@@ -6,8 +6,7 @@ body{
 .main{
     width: 100%;
     height: 100%;
-    /* padding-top: 50px; */
-
+    padding-top: 50px;
     position: relative;
 }
 
@@ -15,8 +14,7 @@ div{
     width: 500px;
     height: 250px;
     place-items: center;
-    /* background-color: black;      */
-    /* align-items: center; */
+    margin: 1px;
 }
 
 .upper{
@@ -30,24 +28,69 @@ div{
 .red{
     background-color: red;
     border-top-left-radius: 100%;
+    /* border-style: solid; */
+    /* border-color: white; */
+
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+.red:hover{
+    transform: scale(1.01);
+}
+.red:active{
+    opacity: 0.7;
 }
 
 .green{
     background-color: green;
     border-bottom-left-radius: 100%;
+    /* border-style: solid; */
+    /* border-color: white; */
 
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+
+}
+
+.green:hover{
+    transform: scale(1.01);
+}
+.green:active{
+    opacity: 0.7;
 }
 
 .blue{
     background-color: blue;
     border-bottom-right-radius: 100%;
+    /* border-style: solid; */
+    /* border-color: white; */
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+}
 
+.blue:hover{
+    transform: scale(1.01);
+}
+.blue:active{
+    opacity: 0.7;
 }
 
 .yellow{
     background-color: yellow;
     border-top-right-radius: 100%;
+    /* border-style: solid; */
+    /* border-color: white; */
 
+    transition: transform 0.3s, opacity 0.3s;
+    cursor: pointer;
+}
+
+.yellow:hover{
+    transform: scale(1.01);
+}
+.yellow:active{
+    opacity: 0.7;
 }
 
 .counting{
@@ -59,6 +102,6 @@ div{
     position: absolute;
     
     right: 46%;
-    top: 40%;
+    top: 45.5%;
 
 }
