@@ -1,107 +1,121 @@
-body{
-    background-color: #000000;
+*{
     margin: 0;
+    padding: 0;
+    scroll-behavior: none;
+}
+
+body{
+    background-color: rgb(48, 48, 58);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: white;
+    font-size: 40px;
+    margin: 10px;
 }
 
 .main{
-    width: 100%;
-    height: 100%;
-    padding-top: 50px;
-    position: relative;
+    text-align: center;
 }
 
-div{
-    width: 500px;
-    height: 250px;
+.container{
+    width: 600px;
+    height: 500px;
+    /* background-color: pink; */
     place-items: center;
-    margin: 1px;
+    
 }
 
-.upper{
+.color-box{
+    /* min-width: 600px; */
     display: flex;
-}
-
-.lower{
-    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .red{
     background-color: red;
-    border-top-left-radius: 100%;
-    /* border-style: solid; */
-    /* border-color: white; */
-
-    transition: transform 0.3s, opacity 0.3s;
-    cursor: pointer;
-}
-
-.red:hover{
-    transform: scale(1.01);
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px 20px;
+    transition: all 0.3s;
 }
 .red:active{
-    opacity: 0.7;
+    transform: scale(0.95);
+    opacity:0.5;
 }
-
-.green{
-    background-color: green;
-    border-bottom-left-radius: 100%;
-    /* border-style: solid; */
-    /* border-color: white; */
-
-    transition: transform 0.3s, opacity 0.3s;
-    cursor: pointer;
-
-}
-
-.green:hover{
-    transform: scale(1.01);
-}
-.green:active{
-    opacity: 0.7;
-}
-
 .blue{
     background-color: blue;
-    border-bottom-right-radius: 100%;
-    /* border-style: solid; */
-    /* border-color: white; */
-    cursor: pointer;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.blue:hover{
-    transform: scale(1.01);
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
 }
 .blue:active{
-    opacity: 0.7;
+    transform: scale(0.95);
+    opacity:0.5;
 }
-
+.green{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+.green:active{
+    transform: scale(0.95);
+    opacity:0.5;
+}
 .yellow{
     background-color: yellow;
-    border-top-right-radius: 100%;
-    /* border-style: solid; */
-    /* border-color: white; */
-
-    transition: transform 0.3s, opacity 0.3s;
-    cursor: pointer;
-}
-
-.yellow:hover{
-    transform: scale(1.01);
+    height: 200px;
+    width: 200px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
 }
 .yellow:active{
-    opacity: 0.7;
+    transform: scale(0.95);
+    opacity:0.5;
 }
 
 .counting{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: rgb(206, 206, 206);
+    position: relative;
+    top: -60%;
+    background-color: rgb(220, 220, 220);
+    display: inline-block;
+    width:150px;
+    height: 80px;
 
-    position: absolute;
-    
-    right: 46%;
-    top: 45.5%;
+    border-radius: 20px;
+    place-items: center;
+    border-radius: 50px;
 
+    padding: 10px;
+}
+
+.level{
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.start{
+    margin-top: 10px;
+    padding: 5px 20px;
+    font-size: 20px;
+    border-style: none;
+    background-color: rgb(58, 15, 80);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.start:active{
+    opacity: 0.8;
 }
